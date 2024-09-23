@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recap Add Balance and Cash Out</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main class="flex justify-center">
+        <div class="mockup-phone border-primary">
+            <div class="camera"></div>
+            <div class="display">
+              <div class="artboard artboard-demo phone-1">
+                <div class="stats shadow">
+                    <div class="stat">
+                        <div class="stat-title text-2xl">Total Balance</div>
+                        <div class="text-3xl font-bold" id="total-balance">5000</div>
+                    </div>
+                  </div>
+                <!-- add balance and cash out btn -->
+                <div class="mt-2">
+                    <button id="add-balance" class="btn btn-outline">Add Balance</button>
+                    <button id="cash-out" class="btn btn-outline btn-accent hover:text-white">Cach Out</button>
+                    <button id="transition" class="btn btn-outline">Transition</button>
+                </div>
+                <div class="divider"></div>
+                <!-- add balance form hero start -->
+                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Add Money</span>
+                        </label>
+                        <input id="input-amount" type="text" placeholder="Please Add Your Amout" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Your Pin Code</span>
+                        </label>
+                        <input id="pin-code" autocomplete="off" type="text" placeholder="Please Your Pin Code" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="add-btn" class="btn btn-accent">Please Add Balance</button>
+                      </div>
+                    </form>
+                  </div>
+                <!-- add balance form hero end -->
+                <!-- cash out form hero start -->
+                <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                    <form class="card-body">
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Cash Out</span>
+                        </label>
+                        <input id="input-cash-out" type="text" placeholder="Please Add Your Amout" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control">
+                        <label class="label">
+                          <span class="label-text">Your Pin Code</span>
+                        </label>
+                        <input id="cash-pin-code" autocomplete="off" type="text" placeholder="Please Your Pin Code" class="input input-bordered" required />
+                      </div>
+                      <div class="form-control mt-6">
+                        <button id="cash-out-btn" class="btn btn-accent">Please Cash Out</button>
+                      </div>
+                    </form>
+                  </div>
+                <!-- cash out form hero end -->
+              </div>
+            </div>
+          </div>
+    </main>
+    <script src="js/utilities.js"></script>
+    <script src="js/addMoney.js"></script>
+    <script src="js/cashOut.js"></script>
+</body>
+
+</html>
