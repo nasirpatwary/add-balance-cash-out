@@ -17,19 +17,19 @@
               <div class="artboard artboard-demo phone-1">
                 <div class="stats shadow">
                     <div class="stat">
-                        <div class="stat-title text-2xl">Total Balance</div>
+                        <p id="change-text" class="stat-title text-2xl">Total Balance</p>
                         <div class="text-3xl font-bold" id="total-balance">5000</div>
                     </div>
                   </div>
                 <!-- add balance and cash out btn -->
-                <div class="mt-2">
-                    <button id="add-balance" class="btn btn-outline">Add Balance</button>
-                    <button id="cash-out" class="btn btn-outline btn-accent hover:text-white">Cach Out</button>
-                    <button id="transition" class="btn btn-outline">Transition</button>
+                <div class="mt-2 flex">
+                    <button id="show-add-btn" class="btn btn-outline">Add Balance</button>
+                    <button id="show-cash-out" class="btn btn-outline btn-accent hover:text-white">Cach Out</button>
+                    <button id="show-transactions" class="btn btn-outline">Transactions</button>
                 </div>
                 <div class="divider"></div>
                 <!-- add balance form hero start -->
-                <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div id="add-balance-form" class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -50,7 +50,7 @@
                   </div>
                 <!-- add balance form hero end -->
                 <!-- cash out form hero start -->
-                <div class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div id="cash-out-form" class="hidden card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                     <form class="card-body">
                       <div class="form-control">
                         <label class="label">
@@ -70,6 +70,14 @@
                     </form>
                   </div>
                 <!-- cash out form hero end -->
+                 <!-- transactions start -->
+                  <div id="text-history" class="hidden">
+                    <h2 class="text-3xl font-semibold">Transactions History</h2>
+                  </div>
+                  <div id="transactions-text">
+
+                  </div>
+                 <!-- transactions end -->
               </div>
             </div>
           </div>
@@ -77,6 +85,7 @@
     <script src="js/utilities.js"></script>
     <script src="js/addMoney.js"></script>
     <script src="js/cashOut.js"></script>
+    <script src="js/features.js"></script>
 </body>
 
 </html>
